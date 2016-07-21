@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="ASCII"?>
-<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_n4jGgE9eEeaegNmxYaNe1g">
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_n4jGgE9eEeaegNmxYaNe1g">
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_SJ-2YE9gEeaegNmxYaNe1g" featurename="children" parentElementId="testapplication.partstack.main">
     <elements xsi:type="basic:Part" xmi:id="_JQK9EE9gEeaegNmxYaNe1g" elementId="testextension.part.extension" contributionURI="bundleclass://TestExtension/testextension.MyPart2" label="Extension" iconURI="platform:/plugin/TestExtension/icons/save_edit.png"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_XI4HYE9iEeaegNmxYaNe1g" featurename="commands" parentElementId="org.eclipse.e4.application">
+    <elements xsi:type="commands:Command" xmi:id="_YLv5oE9iEeaegNmxYaNe1g" elementId="testextension.command.extension" commandName="Extension"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_dqfaQE9iEeaegNmxYaNe1g" featurename="handlers" parentElementId="org.eclipse.e4.application">
+    <elements xsi:type="commands:Handler" xmi:id="_gZmr4E9iEeaegNmxYaNe1g" elementId="testextension.handler.extension" contributionURI="bundleclass://TestExtension/testextension.MyHandler2" command="_YLv5oE9iEeaegNmxYaNe1g"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_6gSg4E9iEeaegNmxYaNe1g" featurename="children" parentElementId="testapplication.menu.application">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_ArZYQE9jEeaegNmxYaNe1g" elementId="testextension.handledmenuitem.extension" label="Extension" iconURI="platform:/plugin/TestExtension/icons/save_edit.png" command="_YLv5oE9iEeaegNmxYaNe1g">
+      <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_S2kIME9jEeaegNmxYaNe1g"/>
+    </elements>
   </fragments>
 </fragment:ModelFragments>

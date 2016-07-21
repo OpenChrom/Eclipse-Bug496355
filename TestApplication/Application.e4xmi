@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" label="Test Application" width="500" height="400">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" selectedElement="_GnQhcE9dEeaq5tNgn5f0gw" label="Test Application" width="500" height="400">
     <children xsi:type="basic:PartSashContainer" xmi:id="_GnQhcE9dEeaq5tNgn5f0gw" elementId="testapplication.partsashcontainer.0">
       <children xsi:type="basic:PartStack" xmi:id="_HEt5gE9dEeaq5tNgn5f0gw" elementId="testapplication.partstack.main" selectedElement="_MTr4wE9dEeaq5tNgn5f0gw">
         <children xsi:type="advanced:Placeholder" xmi:id="_MTr4wE9dEeaq5tNgn5f0gw" elementId="testapplication.placeholder.0" ref="_HqpREE9dEeaq5tNgn5f0gw"/>
       </children>
     </children>
+    <mainMenu xmi:id="_5IlHEE9iEeaegNmxYaNe1g" elementId="testapplication.menu.main">
+      <children xsi:type="menu:Menu" xmi:id="_XeVdME9mEeaegNmxYaNe1g" elementId="testapplication.menu.application" label="App">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_W9zqYE9jEeaegNmxYaNe1g" elementId="testapplication.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_BdQ9QE9nEeaegNmxYaNe1g" elementId="testapplication.handledmenuitem.app" label="Hello" iconURI="platform:/plugin/TestApplication/icons/sample.png" command="_CHxS0E9nEeaegNmxYaNe1g"/>
+      </children>
+    </mainMenu>
     <sharedElements xsi:type="basic:Part" xmi:id="_HqpREE9dEeaq5tNgn5f0gw" elementId="testapplication.part.application" contributionURI="bundleclass://TestApplication/testapplication.MyPart" label="Application" iconURI="platform:/plugin/TestApplication/icons/sample.png"/>
   </children>
+  <handlers xmi:id="_EId_QE9nEeaegNmxYaNe1g" elementId="testapplication.handler.app" contributionURI="bundleclass://TestApplication/testapplication.MyHandler" command="_CHxS0E9nEeaegNmxYaNe1g"/>
   <rootContext xmi:id="_c3AF2cjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
     <children xmi:id="_c3AF2sjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_c3AF28jYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
+  <commands xmi:id="_CHxS0E9nEeaegNmxYaNe1g" elementId="testapplication.command.app" commandName="App"/>
   <addons xmi:id="_c3AF0sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_c3AF08jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_c3AF1MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
