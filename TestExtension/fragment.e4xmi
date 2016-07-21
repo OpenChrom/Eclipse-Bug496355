@@ -3,16 +3,14 @@
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_SJ-2YE9gEeaegNmxYaNe1g" featurename="children" parentElementId="testapplication.partstack.main">
     <elements xsi:type="advanced:Placeholder" xmi:id="_m2JNUE9pEeaegNmxYaNe1g" elementId="testextension.placeholder.0" ref="_e5yawE9pEeaegNmxYaNe1g"/>
   </fragments>
-  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_XI4HYE9iEeaegNmxYaNe1g" featurename="commands" parentElementId="org.eclipse.e4.application">
-    <elements xsi:type="commands:Command" xmi:id="_YLv5oE9iEeaegNmxYaNe1g" elementId="testextension.command.extension" commandName="Extension"/>
-  </fragments>
-  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_dqfaQE9iEeaegNmxYaNe1g" featurename="handlers" parentElementId="org.eclipse.e4.application">
-    <elements xsi:type="commands:Handler" xmi:id="_gZmr4E9iEeaegNmxYaNe1g" elementId="testextension.handler.extension" contributionURI="bundleclass://TestExtension/testextension.MyHandler2" command="_YLv5oE9iEeaegNmxYaNe1g"/>
-  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_XI4HYE9iEeaegNmxYaNe1g" featurename="commands" parentElementId="org.eclipse.e4.application"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_dqfaQE9iEeaegNmxYaNe1g" featurename="handlers" parentElementId="org.eclipse.e4.application"/>
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_6gSg4E9iEeaegNmxYaNe1g" featurename="children" parentElementId="testapplication.menu.application">
     <elements xsi:type="menu:HandledMenuItem" xmi:id="_ArZYQE9jEeaegNmxYaNe1g" elementId="testextension.handledmenuitem.extension" label="Extension" iconURI="platform:/plugin/TestExtension/icons/save_edit.png" command="_YLv5oE9iEeaegNmxYaNe1g"/>
   </fragments>
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_-bSIEE9oEeaegNmxYaNe1g" featurename="sharedElements" parentElementId="org.eclipse.e4.window.main">
+    <elements xsi:type="commands:Command" xmi:id="_YLv5oE9iEeaegNmxYaNe1g" elementId="testextension.command.extension" commandName="Extension"/>
+    <elements xsi:type="commands:Handler" xmi:id="_gZmr4E9iEeaegNmxYaNe1g" elementId="testextension.handler.extension" contributionURI="bundleclass://TestExtension/testextension.MyHandler2" command="_YLv5oE9iEeaegNmxYaNe1g"/>
     <elements xsi:type="basic:Part" xmi:id="_e5yawE9pEeaegNmxYaNe1g" elementId="testextension.part.extension" contributionURI="bundleclass://TestExtension/testextension.MyPart2" label="Extension" iconURI="platform:/plugin/TestExtension/icons/save_edit.png"/>
   </fragments>
 </fragment:ModelFragments>
